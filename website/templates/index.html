@@ -1,0 +1,96 @@
+{% extends "base.html" %}
+
+{% block title %}
+    Homepage
+{% endblock %}
+
+{% block styling %}
+    <style> 
+        .profile_pic{
+            height: 350px;
+        }
+    </style>
+{% endblock %}
+
+{% block content %}
+    <div class="container main" style="padding-top: 30px; width: 90%;">
+        <div class="row">
+            <div class="col-3">
+                <h2 class="display-6 rounded" style="padding: 15px; font-size: 2rem; background-color:rgb(212, 212, 212); color:rgb(255, 255, 255);">
+                    About me
+                </h2>
+                <div class="card">
+                    <img src="../static/pic_1.jpg" class="card-img-top" alt="profilepic">
+                    <div class="card-body">
+                        <h5 class="card-title">Developed by</h5>
+                        <p class="card-text">Engr. Shahrukh Saleem</p>
+                        <h5 class="card-title">About</h5>
+                        <p class="card-text">Graduated in Electronics Engineering from SSUET, Karachi. 
+                            I have over 3+ Years of Development and 2+ Years of Teaching Experience in Python, 
+                            Embedded Systems, Robotics, IoT etc.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-9">
+                <h2 class="display-6 rounded" style="padding: 15px; font-size: 2rem; background-color:rgb(146, 146, 146); color:rgb(255, 255, 255);">
+                    Data Visualization
+                </h2>
+                <div class="row">
+                    <div class="col">
+                        <div class="card">
+                            <iframe width="450" height="260" src="https://thingspeak.com/channels/1450351/charts/1?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <iframe width="450" height="260" src="https://thingspeak.com/channels/1450351/charts/3?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <iframe width="450" height="260" src="https://thingspeak.com/channels/1450351/charts/5?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                        </div>                        
+                    </div>
+                    <div class="col">
+                        <div class="card">
+                            <iframe width="450" height="260" src="https://thingspeak.com/channels/1450351/charts/2?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <iframe width="450" height="260" src="https://thingspeak.com/channels/1450351/charts/4?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                        </div>
+                        <br>
+                        <div class="card">
+                            <iframe width="450" height="260" src="https://thingspeak.com/channels/1450351/charts/6?bgcolor=%23ffffff&color=%23d62020&dynamic=true&results=60&type=line&update=15"></iframe>
+                        </div>                        
+                    </div>
+                </div>
+                <h2 class="display-6 rounded" style="margin-top:15px; padding: 15px; font-size: 2rem; background-color:rgb(212, 212, 212); color:rgb(255, 255, 255);">
+                    Controls
+                </h2>
+                <div class="row">
+                    <div class="col-4" align="center">
+                        <p>Motor 1</p>
+                        <div class="d-grid gap-2 col">
+                            <a href="/" class="btn btn-outline-primary btn-lg" role="button">ON</a>
+                            <a href="/" class="btn btn-outline-secondary btn-lg" role="button">OFF</a>
+                        </div>
+                    </div>
+                    <div class="col-4" align="center">
+                        <p>Motor 2</p>
+                        <div class="d-grid gap-2 col">
+                            <a href="/" class="btn btn-outline-primary btn-lg" role="button">ON</a>
+                            <a href="/" class="btn btn-outline-secondary btn-lg" role="button">OFF</a>
+                        </div>
+                    </div>
+                    <div class="col-4" align="center">
+                        <p>Motor 3</p>
+                        <div class="d-grid gap-2 col">
+                            <a href="/" class="btn btn-outline-primary btn-lg" role="button">ON</a>
+                            <a href="/" class="btn btn-outline-secondary btn-lg" role="button">OFF</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}
